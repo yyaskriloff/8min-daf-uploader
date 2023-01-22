@@ -1,0 +1,27 @@
+After my 1080 edit, I create
+720
+WhatsApp size
+Tablet size
+MP3
+
+I upload to
+YouTube
+AllDaf
+TorahAnytime
+Our app
+A few Google drive locations
+Telegram
+Via email
+ToraZoom
+Anchor
+WhatsApp
+
+I think that's it for now
+
+They all have different information that needs to be filled in, not a standard one thing fits all
+
+list of big stuff
+-create a docker image that has scripts to pull s3 video and resize it
+-create a lambda for each platform that will upload the video
+-create an sns topic for all these lambdas to get notified when the video is doen resizing
+-create an sns topic for any failures that will be delivered to whom it may concern 
