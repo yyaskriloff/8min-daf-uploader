@@ -22,4 +22,17 @@ const command = ffmpeg('./test-video.mov')
     .noVideo()
     .format('mp3')
 
+    .on('end', function () {
+        console.log('Finished processing');
+    })
+
+    .on('progress', function (progress) {
+        console.log(progress)
+        console.log('Processing: ' + progress.percent + '% done');
+    })
+
+    .on('error', function (err, stdout, stderr) {
+        console.log('Cannot process video: ' + err.message);
+    })
+
     .run()
